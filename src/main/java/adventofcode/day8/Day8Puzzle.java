@@ -14,7 +14,13 @@ public class Day8Puzzle {
     private static final char ALIVE = '#';
 
     public static long solve(final String input, final int width, final int height) {
+        return calculateRotations(input, width, height).stream()
+                .mapToInt(s -> StringUtils.countMatches(s, ALIVE))
+                .sum();
 
+    }
+
+    public static List<String> calculateRotations(final String input, final int width, final int height){
         final List<String> board = createBoard(width, height);
         final List<String> lines = Arrays.asList(StringUtils.split(input, '\n'));
 
@@ -35,12 +41,7 @@ public class Day8Puzzle {
             }
 
         }
-
-        board.forEach(System.out::println);
-        return board.stream()
-                .mapToInt(s -> StringUtils.countMatches(s, ALIVE))
-                .sum();
-
+        return board;
     }
 
     private static void shiftColumn(final List<String> board, final int column, final int distance) {
