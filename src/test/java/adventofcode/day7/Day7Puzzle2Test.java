@@ -38,7 +38,6 @@ public class Day7Puzzle2Test {
 
     @Test
     public void isIpv7_6() throws Exception {
-        System.out.println(Day7Puzzle2.isSslSupported("ioxxoj[asfdkgjabdbahsdl]fguhlskdfhglskdf[habbagdfgh]zxcvbn"));
         Assert.assertFalse(Day7Puzzle2.isSslSupported("ioxxoj[asfdkgjabdbahsdl]fguhlskdfhglskdf[habbagdfgh]zxcvbn"));
     }
 

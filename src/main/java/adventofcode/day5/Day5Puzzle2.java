@@ -27,13 +27,11 @@ public class Day5Puzzle2 {
                     final String newString = StringUtils.substring(hash, 6, 7);
 
                     result.setCharAt(newPos, newString.charAt(0));
-                    System.out.println("Hacking in progress... " + result.toString());
                     replacedPos.add(posString);
                 }
             }
         }
 
-        System.out.println("Hack successful!");
         return result.toString();
     }
 

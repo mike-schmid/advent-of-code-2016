@@ -19,7 +19,7 @@ public class Day8Puzzle {
         final List<String> lines = Arrays.asList(StringUtils.split(input, '\n'));
 
         for (String line : lines) {
-            System.out.println(line);
+
             if (StringUtils.startsWith(line, "rect")) {
                 final Integer x = Integer.valueOf(StringUtils.substringAfterLast(line, "x"));
                 final Integer y = Integer.valueOf(StringUtils.substringBetween(line, "rect ", "x"));
@@ -34,10 +34,9 @@ public class Day8Puzzle {
                 shiftColumn(board, column, distance % height);
             }
 
-            board.forEach(System.out::println);
-            System.out.println();
         }
 
+        board.forEach(System.out::println);
         return board.stream()
                 .mapToInt(s -> StringUtils.countMatches(s, ALIVE))
                 .sum();
