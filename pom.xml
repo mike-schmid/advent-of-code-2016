@@ -62,6 +62,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.xaguzman</groupId>
+            <artifactId>pathfinding</artifactId>
+            <version>0.2.6</version>
+        </dependency>
+
+
     </dependencies>
 
 
