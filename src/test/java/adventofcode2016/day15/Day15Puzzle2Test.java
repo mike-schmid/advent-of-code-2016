@@ -1,7 +1,7 @@
 package adventofcode2016.day15;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -19,7 +19,7 @@ public class Day15Puzzle2Test {
                 "Disc #6 has 3 positions; at time=0, it is at position 0.\n" +
                 "Disc #6 has 11 positions; at time=0, it is at position 0.";
 
-        Assert.assertEquals(3543984, Day15Puzzle.solve(input));
+        Assertions.assertEquals(3543984, Day15Puzzle.solve(input));
 
     }
 }

@@ -1,7 +1,7 @@
 package adventofcode2016.day06;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -27,7 +27,7 @@ public class Day06Puzzle2Test {
                 "dvrsen\n" +
                 "enarar";
 
-        Assert.assertEquals("advent", Day06Puzzle2.solve(input));
+        Assertions.assertEquals("advent", Day06Puzzle2.solve(input));
     }
 
     @Test
@@ -605,7 +605,7 @@ public class Day06Puzzle2Test {
                 "kyzbxxqo\n" +
                 "oyislbdo";
 
-        Assert.assertEquals("pljvorrk", Day06Puzzle2.solve(input));
+        Assertions.assertEquals("pljvorrk", Day06Puzzle2.solve(input));
     }
 
 }

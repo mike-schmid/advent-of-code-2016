@@ -1,7 +1,7 @@
 package adventofcode2016.day07;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,32 +13,32 @@ public class Day07PuzzleTest {
 
     @Test
     public void isIpv7_1() throws Exception {
-        Assert.assertTrue(Day07Puzzle.isTlsSupported("abba[mnop]qrst"));
+        Assertions.assertTrue(Day07Puzzle.isTlsSupported("abba[mnop]qrst"));
     }
 
     @Test
     public void isIpv7_2() throws Exception {
-        Assert.assertFalse(Day07Puzzle.isTlsSupported("abcd[bddb]xyyx"));
+        Assertions.assertFalse(Day07Puzzle.isTlsSupported("abcd[bddb]xyyx"));
     }
 
     @Test
     public void isIpv7_3() throws Exception {
-        Assert.assertFalse(Day07Puzzle.isTlsSupported("aaaa[qwer]tyui"));
+        Assertions.assertFalse(Day07Puzzle.isTlsSupported("aaaa[qwer]tyui"));
     }
 
     @Test
     public void isIpv7_4() throws Exception {
-        Assert.assertTrue(Day07Puzzle.isTlsSupported("ioxxoj[asdfgh]zxcvbn"));
+        Assertions.assertTrue(Day07Puzzle.isTlsSupported("ioxxoj[asdfgh]zxcvbn"));
     }
 
     @Test
     public void isIpv7_5() throws Exception {
-        Assert.assertTrue(Day07Puzzle.isTlsSupported("ioxsdfxoj[asfdkgjhsdl]qwertzabbauiop[hgdfgh]zxcvbnioxsdxoj"));
+        Assertions.assertTrue(Day07Puzzle.isTlsSupported("ioxsdfxoj[asfdkgjhsdl]qwertzabbauiop[hgdfgh]zxcvbnioxsdxoj"));
     }
 
     @Test
     public void isIpv7_6() throws Exception {
-        Assert.assertFalse(Day07Puzzle.isTlsSupported("ioxxoj[asfdkgjabdbahsdl]fguhlskdfhglskdf[habbagdfgh]zxcvbn"));
+        Assertions.assertFalse(Day07Puzzle.isTlsSupported("ioxxoj[asfdkgjabdbahsdl]fguhlskdfhglskdf[habbagdfgh]zxcvbn"));
     }
 
     @Test
@@ -2044,7 +2044,7 @@ public class Day07PuzzleTest {
                 "nefefqadkmytguyp[ucqagcoyxinbrvbw]neksoxgtnnfojobtx[bxhdwvwfhybtbzkijj]poayieifsaocrboesfe[tnggfefcucifowqp]olmjwaqlaiwkkbtruw\n" ,
                 "tivudfusgnewzshs[mausfjbgxmyibin]yponuityptavbhekrlg[qeyafuevtlqemtfa]owtdxadrwwbxbrkl[obfcyxbifipwhduubu]mjocivgvrcbrllso");
 
-        Assert.assertEquals(110, Day07Puzzle.solve(input));
+        Assertions.assertEquals(110, Day07Puzzle.solve(input));
 
     }
 

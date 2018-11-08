@@ -1,7 +1,7 @@
 package adventofcode2016.day22;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -973,7 +973,7 @@ public class Day22PuzzleTest {
                 "/dev/grid/node-x31-y28   93T   66T    27T   70%\n" +
                 "/dev/grid/node-x31-y29   92T   66T    26T   71%";
 
-        Assert.assertEquals(952, Day22Puzzle.solve(input));
+        Assertions.assertEquals(952, Day22Puzzle.solve(input));
 
     }
 

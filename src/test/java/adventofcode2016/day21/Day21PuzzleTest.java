@@ -1,7 +1,7 @@
 package adventofcode2016.day21;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -20,7 +20,7 @@ public class Day21PuzzleTest {
                 "rotate based on position of letter d";
 
 
-        Assert.assertEquals("decab", Day21Puzzle.solve(input, "abcde"));
+        Assertions.assertEquals("decab", Day21Puzzle.solve(input, "abcde"));
     }
 
     @Test
@@ -127,7 +127,7 @@ public class Day21PuzzleTest {
                 "swap letter a with letter h";
 
 
-        Assert.assertEquals("ghfacdbe", Day21Puzzle.solve(input, "abcdefgh"));
+        Assertions.assertEquals("ghfacdbe", Day21Puzzle.solve(input, "abcdefgh"));
     }
 
 }

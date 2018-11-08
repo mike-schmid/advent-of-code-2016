@@ -1,7 +1,7 @@
 package adventofcode2017.day02;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class Day02Puzzle2Test {
 
@@ -12,7 +12,7 @@ public class Day02Puzzle2Test {
                 "9\t4\t7\t3\n" +
                 "3\t8\t6\t5";
 
-        Assert.assertEquals(9, Day02Puzzle2.solve(input));
+        Assertions.assertEquals(9, Day02Puzzle2.solve(input));
 
     }
 
@@ -36,7 +36,7 @@ public class Day02Puzzle2Test {
                 "1112\t1260\t809\t72\t1104\t156\t104\t1253\t793\t462\t608\t84\t99\t1174\t449\t929\n" +
                 "707\t668\t1778\t1687\t2073\t1892\t62\t1139\t908\t78\t1885\t800\t945\t712\t57\t65";
 
-        Assert.assertEquals(326, Day02Puzzle2.solve(input));
+        Assertions.assertEquals(326, Day02Puzzle2.solve(input));
 
     }
 

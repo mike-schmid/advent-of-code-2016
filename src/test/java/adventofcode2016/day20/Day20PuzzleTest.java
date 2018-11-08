@@ -1,7 +1,7 @@
 package adventofcode2016.day20;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -14,7 +14,7 @@ public class Day20PuzzleTest {
                 "0-2\n" +
                 "4-7";
 
-        Assert.assertEquals(3,Day20Puzzle.solve(blackList));
+        Assertions.assertEquals(3,Day20Puzzle.solve(blackList));
     }
 
     @Test
@@ -1124,7 +1124,7 @@ public class Day20PuzzleTest {
                 "4245296921-4257493526\n" +
                 "3930128245-3930477154";
 
-        Assert.assertEquals(23923783,Day20Puzzle.solve(blackList));
+        Assertions.assertEquals(23923783,Day20Puzzle.solve(blackList));
     }
 
 }

@@ -1,7 +1,7 @@
 package adventofcode2017.day05;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class Day05PuzzleTest {
 
@@ -14,7 +14,7 @@ public class Day05PuzzleTest {
                 "1\n" +
                 "-3";
 
-        Assert.assertEquals(5, Day05Puzzle.solve(input));
+        Assertions.assertEquals(5, Day05Puzzle.solve(input));
 
     }
 
@@ -1074,7 +1074,7 @@ public class Day05PuzzleTest {
                 "-950\n" +
                 "-410";
 
-        Assert.assertEquals(354121, Day05Puzzle.solve(input));
+        Assertions.assertEquals(354121, Day05Puzzle.solve(input));
 
     }
 

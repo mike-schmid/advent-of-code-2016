@@ -1,7 +1,7 @@
 package adventofcode2016.day10;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -18,7 +18,7 @@ public class Day10Puzzle2Test {
                 "bot 0 gives low to output 2 and high to output 0\n" +
                 "value 2 goes to bot 2";
 
-        Assert.assertEquals(5 * 2 * 3, Day10Puzzle2.solve(input));
+        Assertions.assertEquals(5 * 2 * 3, Day10Puzzle2.solve(input));
     }
 
     @Test
@@ -256,7 +256,7 @@ public class Day10Puzzle2Test {
                 "bot 68 gives low to bot 96 and high to bot 183\n" +
                 "bot 111 gives low to bot 125 and high to bot 51";
 
-        Assert.assertEquals(47101, Day10Puzzle2.solve(input));
+        Assertions.assertEquals(47101, Day10Puzzle2.solve(input));
     }
 
 }

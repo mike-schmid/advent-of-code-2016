@@ -1,7 +1,7 @@
 package adventofcode2016.day07;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,37 +13,37 @@ public class Day07Puzzle2Test {
 
     @Test
     public void isIpv7_1() throws Exception {
-        Assert.assertTrue(Day07Puzzle2.isSslSupported("aba[bab]xyz"));
+        Assertions.assertTrue(Day07Puzzle2.isSslSupported("aba[bab]xyz"));
     }
 
     @Test
     public void isIpv7_2() throws Exception {
-        Assert.assertFalse(Day07Puzzle2.isSslSupported("xyx[xyx]xyx"));
+        Assertions.assertFalse(Day07Puzzle2.isSslSupported("xyx[xyx]xyx"));
     }
 
     @Test
     public void isIpv7_3() throws Exception {
-        Assert.assertTrue(Day07Puzzle2.isSslSupported("zazbz[bzb]cdb"));
+        Assertions.assertTrue(Day07Puzzle2.isSslSupported("zazbz[bzb]cdb"));
     }
 
     @Test
     public void isIpv7_4() throws Exception {
-        Assert.assertTrue(Day07Puzzle2.isSslSupported("aaa[kek]eke"));
+        Assertions.assertTrue(Day07Puzzle2.isSslSupported("aaa[kek]eke"));
     }
 
     @Test
     public void isIpv7_5() throws Exception {
-        Assert.assertTrue(Day07Puzzle2.isSslSupported("ioxsdfxoj[asfduaukgjhsdl]qweauartzabbauiop[hgdfgh]zxcvbnioxsdxoj"));
+        Assertions.assertTrue(Day07Puzzle2.isSslSupported("ioxsdfxoj[asfduaukgjhsdl]qweauartzabbauiop[hgdfgh]zxcvbnioxsdxoj"));
     }
 
     @Test
     public void isIpv7_6() throws Exception {
-        Assert.assertFalse(Day07Puzzle2.isSslSupported("ioxxoj[asfdkgjabdbahsdl]fguhlskdfhglskdf[habbagdfgh]zxcvbn"));
+        Assertions.assertFalse(Day07Puzzle2.isSslSupported("ioxxoj[asfdkgjabdbahsdl]fguhlskdfhglskdf[habbagdfgh]zxcvbn"));
     }
 
     @Test
     public void isIpv7_7() throws Exception {
-        Assert.assertFalse(Day07Puzzle2.isSslSupported("ioxxoj[asfdkgjabdbahsdl]fguhlskdfhglskdf[habbagdfgh]zxcvbn"));
+        Assertions.assertFalse(Day07Puzzle2.isSslSupported("ioxxoj[asfdkgjabdbahsdl]fguhlskdfhglskdf[habbagdfgh]zxcvbn"));
     }
 
     @Test
@@ -2049,7 +2049,7 @@ public class Day07Puzzle2Test {
                 "nefefqadkmytguyp[ucqagcoyxinbrvbw]neksoxgtnnfojobtx[bxhdwvwfhybtbzkijj]poayieifsaocrboesfe[tnggfefcucifowqp]olmjwaqlaiwkkbtruw\n",
                 "tivudfusgnewzshs[mausfjbgxmyibin]yponuityptavbhekrlg[qeyafuevtlqemtfa]owtdxadrwwbxbrkl[obfcyxbifipwhduubu]mjocivgvrcbrllso");
 
-        Assert.assertEquals(242, Day07Puzzle2.solve(input));
+        Assertions.assertEquals(242, Day07Puzzle2.solve(input));
 
     }
 

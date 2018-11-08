@@ -1,7 +1,7 @@
 package adventofcode2016.day03;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -14,7 +14,7 @@ public class Day03PuzzleTest {
                 "  5  10  25\n" +
                 "  3  4  5\n";
 
-        Assert.assertEquals(1,  Day03Puzzle.solve(testInput));
+        Assertions.assertEquals(1,  Day03Puzzle.solve(testInput));
     }
 
     @Test
@@ -1932,7 +1932,7 @@ public class Day03PuzzleTest {
                         "   40  813  103\n" +
                         "  436  766  254";
 
-        Assert.assertEquals(993, Day03Puzzle.solve(testInput));
+        Assertions.assertEquals(993, Day03Puzzle.solve(testInput));
     }
 
 }

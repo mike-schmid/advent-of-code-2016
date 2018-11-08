@@ -1,7 +1,7 @@
 package adventofcode2016.day04;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -15,7 +15,7 @@ public class Day04Puzzle2Test {
                 "not-a-real-room-404[oarel]\n" +
                 "totally-real-room-200[decoy]\n";
 
-        Assert.assertEquals(0, Day04Puzzle2.solve(testInput));
+        Assertions.assertEquals(0, Day04Puzzle2.solve(testInput));
     }
 
     @Test
@@ -1001,7 +1001,7 @@ public class Day04Puzzle2Test {
                 "kyelcrga-cee-yaosgqgrgml-808[izdqr]\n" +
                 "hplazytkpo-prr-cpnptgtyr-379[prtya]";
 
-        Assert.assertEquals(984, Day04Puzzle2.solve(testInput));
+        Assertions.assertEquals(984, Day04Puzzle2.solve(testInput));
     }
 
 

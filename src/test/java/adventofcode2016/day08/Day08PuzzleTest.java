@@ -1,7 +1,7 @@
 package adventofcode2016.day08;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Mike Schmid
@@ -16,7 +16,7 @@ public class Day08PuzzleTest {
                         "rotate row y=0 by 4\n" +
                         "rotate column x=1 by 1\n";
 
-        Assert.assertEquals(6, Day08Puzzle.solve(input,7,3));
+        Assertions.assertEquals(6, Day08Puzzle.solve(input,7,3));
     }
 
     @Test
@@ -169,7 +169,7 @@ public class Day08PuzzleTest {
                         "rotate column x=2 by 5\n" +
                         "rotate column x=1 by 5";
 
-        Assert.assertEquals(115, Day08Puzzle.solve(input,50, 6));
+        Assertions.assertEquals(115, Day08Puzzle.solve(input,50, 6));
     }
 
 }
