@@ -35,3 +35,4 @@ _.*
 atlassian-ide-plugin.xml
 .checkstyle
 nb-configuration.xml
+cachedInputData
