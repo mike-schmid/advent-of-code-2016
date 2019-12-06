@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mike-schmid</groupId>
-    <artifactId>advent-of-code-2016</artifactId>
+    <artifactId>advent-of-code</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
